@@ -31,7 +31,7 @@
 
 ## Overview
 
-![screenshot](https://www.github.com/faraaiden/devChallenges/01-responsive-web-dev/01-404-not-found/assets/images/faraaiden-devchallenges-404-not-found.png)
+![screenshot](https://github.com/faraaiden/devChallenges/blob/main/01-responsive-web-dev/01-404-not-found/assets/images/faraaiden-devchallenges-404-not-found.png)
 
 ### Built With
 
