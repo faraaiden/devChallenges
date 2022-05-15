@@ -10,7 +10,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/faraaiden/devChallenges/01-responsive-web-dev/01-404-not-found">
+    <a href="/">
       Solution
     </a>
     <span> | </span>
