@@ -1,0 +1,82 @@
+@use '../util' as *;
+@use '../globals/typography' as *;
+
+.hero {
+  &__container {
+    max-width: 440px;
+    padding-top: 64px;
+    padding-bottom: 74px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    @include breakpoint(medium) {
+      text-align: center;
+    }
+
+    @include breakpoint(large) {
+      max-width: 1440px;
+      gap: 118px;
+      text-align: left;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__img {
+    max-width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include breakpoint(large) {
+      max-width: 540px;
+    }
+  }
+
+  &__copy {
+    @include breakpoint(large) {
+      max-width: 586px;
+    }
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__subtitle {
+    @include subtitle;
+    margin: 30px 0 66px;
+  }
+
+  &__cta {
+    width: 216px;
+    height: 68px;
+    display: grid;
+    place-items: center;
+    font-size: var(--small-size);
+    font-weight: 700;
+    line-height: 21px;
+    color: var(--white);
+    background-color: var(--dark-color);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: inset 0px 0px 0px var(--yellow);
+    transition: all .3s ease-in-out;
+
+    @include breakpoint(medium) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include breakpoint(large) {
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    &:hover {
+      box-shadow: inset 216px 0px 0px var(--yellow);
+      color: var(--dark-color);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+html {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-space-mono);
+  color: var(--dark-color);
+  letter-spacing: -3.5%;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+img {
+  width: 100%;
+}

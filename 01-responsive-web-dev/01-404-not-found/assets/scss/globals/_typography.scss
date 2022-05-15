@@ -1,0 +1,27 @@
+@use '../util' as *;
+
+:root {
+  --logo-size: 24px;
+  --h1-size: 48px;
+  --h1-line-height: 71.09px;
+  --text-size: 18px;
+  --text-line-height: 26.66px;
+  --small-size: 14px;
+  
+  @include breakpoint(large) {
+    --h1-size: 64px;
+    --h1-line-height: 94.78px;
+    --text-size: 24px;
+    --text-line-height: 35.54px;
+  }
+}
+
+@mixin title() {
+  font-size: var(--h1-size);
+  line-height: var(--h1-line-height);
+}
+
+@mixin subtitle() {
+  font-size: var(--text-size);
+  line-height: var(--text-line-height);
+}
